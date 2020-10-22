@@ -1,0 +1,130 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.page-content {
+    display: flex;
+    padding: 50px;
+    width: 85%;
+    border: 1px solid blue;
+ }
+
+ .navigation {
+    padding: 50px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid red;
+}
+
+/* Reusable */
+
+.main-page {
+    display: flex;
+}
+
+/* Navigation */
+
+.navigation .brand {
+    width: 200px;
+}
+ .navigation ul {
+     font-size: 14px;
+     list-style: none;
+     padding-left: 0;
+ }
+
+ .navigation a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .navigation a:hover {
+     color: rgb(63, 63, 63);
+ }
+
+ .navigation ul li:last-child {
+     padding-top: 20px;
+ }
+ .navigation .icons-block {
+    padding-top: 50px;
+ }
+
+ .navigation .icons-block a {
+     padding-right: 5px;
+ }
+
+ /* .navigation .list-block select {
+    display: none;
+} */
+
+/* Section-about */
+ .section-about img {
+     width: 500px;
+     padding-right: 25px;
+ }
+
+ .section-about-bio p {
+     font-size: 12px;
+     margin: 0;
+     text-align: justify;
+ }
+
+ /* Section-portrait && section-product && section-film*/
+ .slide {
+    display: none  
+}  
+
+.slide img {  
+    width: 100%;  
+}  
+.slide-show-wrapper {  
+    max-width: 1000px;  
+    position: relative;  
+    margin: auto;  
+}  
+.left, .right {  
+    cursor: pointer;  
+    /* position: absolute;  
+    top: 50%;   */
+    width: auto; 
+    font-size: 12px;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;  
+}  
+
+/* Fading animation */  
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1.5s;  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+
+/* Media-responsive */
+
+/* @media (max-width: 960px) {
+
+    .list-block ul {display: none;}
+    .list-block select {display: inline-block;}
+
+} */
