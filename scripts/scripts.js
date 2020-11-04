@@ -16,9 +16,3 @@ let slide_index = 17;
             }  
             slides[slide_index - 1].style.display = "block";  
         }
-
-// display: none -> onclick display:block
-
-// function myFunction() {
-//     document.getElementsById("about").style.display = 'block';
-// }
